@@ -16,10 +16,13 @@ repositories {
 
 dependencies {
     val kotestVersion = "5.0.3"
+    val cucumberVersion = "7.1.0"
     testImplementation(kotlin("test"))
     testImplementation("io.kotest:kotest-runner-junit5:$kotestVersion") // for kotest framework
     testImplementation("io.kotest:kotest-assertions-core:$kotestVersion") // for kotest core jvm assertions
     testImplementation("io.kotest:kotest-property:$kotestVersion") // for kotest property test
+    testImplementation("io.cucumber:cucumber-java8:$cucumberVersion")
+    testImplementation("io.cucumber:cucumber-junit:$cucumberVersion")
 }
 
 tasks.test {
