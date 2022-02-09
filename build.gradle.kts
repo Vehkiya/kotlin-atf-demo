@@ -15,8 +15,8 @@ repositories {
 }
 
 dependencies {
-    val kotestVersion = "5.0.3"
-    val cucumberVersion = "7.1.0"
+    val kotestVersion = "5.1.0"
+    val cucumberVersion = "7.2.3"
     testImplementation(kotlin("test"))
     testImplementation("io.kotest:kotest-runner-junit5:$kotestVersion") // for kotest framework
     testImplementation("io.kotest:kotest-assertions-core:$kotestVersion") // for kotest core jvm assertions
